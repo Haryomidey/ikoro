@@ -57,9 +57,9 @@ function DignitariesCarousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % dignitaries.length);
-        }, 5000); // Change dignitaries every 5 seconds
+        }, 5000);
 
-        return () => clearInterval(interval); // Cleanup on unmount
+        return () => clearInterval(interval); 
     }, []);
 
     const nextDignitary = () => {
@@ -79,7 +79,7 @@ function DignitariesCarousel() {
                         onClick={prevDignitary}
                         className="absolute left-0 bg-teal-500 text-white rounded-full p-3 hover:bg-teal-600 transition-all"
                     >
-                        <FaArrowLeft size={24} />
+                        <FaArrowLeft />
                     </button>
 
                     <div className="bg-white p-6 rounded-lg shadow-xl w-full sm:w-96 mx-auto">
@@ -101,7 +101,7 @@ function DignitariesCarousel() {
                         onClick={nextDignitary}
                         className="absolute right-0 bg-teal-500 text-white rounded-full p-3 hover:bg-teal-600 transition-all"
                     >
-                        <FaArrowRight size={24} />
+                        <FaArrowRight />
                     </button>
                 </div>
 
