@@ -52,10 +52,10 @@ const Culture = () => {
       <Header />
       <section className="relative bg-cover bg-center text-white h-screen" style={{ backgroundImage: `url(${CultureHero})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 flex items-center justify-center h-full text-center">
+        <div className="relative z-10 flex items-center justify-center h-full text-center px-5 sm:px-14 lg:px-20">
           <div className="text-3xl sm:text-4xl md:text-5xl font-bold px-5 sm:px-14 lg:px-20">
             <h1>Discover the Rich Culture of Ikoro Ekiti</h1>
-            <p className="mt-4 text-base sm:text-lg">Join us as we explore the traditions, art, festivals, and the vibrant spirit that make Ikoro-Ekiti a unique place to live and visit.</p>
+            <p className="mt-4 text-sm sm:text-lg">Join us as we explore the traditions, art, festivals, and the vibrant spirit that make Ikoro a unique place to live and visit.</p>
           </div>
         </div>
       </section>

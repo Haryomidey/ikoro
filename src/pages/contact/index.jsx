@@ -11,14 +11,14 @@ const Contact = () => {
             <section className="bg-cover bg-center min-h-[500px] flex items-center justify-center text-white text-center" style={{ backgroundImage: `url(${ContactImage})` }}>
                 <div className="bg-black bg-opacity-50 p-8 rounded-lg shadow-lg w-full h-full min-h-[500px] flex flex-col justify-center items-center">
                     <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Get in Touch with Us</h1>
-                    <p className="text-base sm:text-lg mb-6 max-w-2xl mx-auto">We are here to answer your questions and assist you with anything you need. Reach out to us today!</p>
+                    <p className="text-sm sm:text-lg mb-6 max-w-2xl mx-auto">We are here to answer your questions and assist you with anything you need. Reach out to us today!</p>
                 </div>
             </section>
             
-            <section className="pt-[50px] px-5 sm:px-14 lg:px-20 bg-cover bg-center min-h-[80vh] pb-20" style={{ backgroundImage: "url('/images/contact-bg.jpg')" }}>
+            <section className="sm:pt-[50px] px-5 sm:px-14 lg:px-20 bg-cover bg-center min-h-[80vh] pb-20" style={{ backgroundImage: "url('/images/contact-bg.jpg')" }}>
                 <div className="bg-black bg-opacity-50 text-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto mt-20">
                     <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-6">Contact Us</h1>
-                    <p className="text-center text-base md:text-lg mb-6">We'd love to hear from you! Feel free to reach out to us with any inquiries or feedback.</p>
+                    <p className="text-center text-sm sm:text-base md:text-lg mb-6">We'd love to hear from you! Feel free to reach out to us with any inquiries or feedback.</p>
                     <form className="space-y-6">
                         <div className="mb-4">
                             <label className="block text-gray-200">Name</label>
@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            <section className="pt-10 pb-20 px-5 sm:px-14 lg:px-20">
+            <section className="pb-20 px-5 sm:px-14 lg:px-20">
                 <div className="">
                     <h2 className="text-3xl font-extrabold text-center pb-5">Our Location</h2>
                     <div className="w-full h-[400px]">

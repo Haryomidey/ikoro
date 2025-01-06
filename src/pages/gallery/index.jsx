@@ -41,7 +41,7 @@ const Gallery = () => {
                     <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-white leading-tight drop-shadow-md">
                     Our Beautiful Gallery
                     </h1>
-                    <p className="text-gray-200 text-lg sm:text-xl mb-6 drop-shadow-md">
+                    <p className="text-gray-200 text-base sm:text-xl mb-6 drop-shadow-md">
                     Explore some of the moments captured in our community
                     </p>
                 </div>
@@ -83,7 +83,7 @@ const Gallery = () => {
                         />
                         <p className="text-white text-center mt-4">{lightbox.caption}</p>
                         <button
-                            className="absolute top-4 right-4 text-white text-2xl"
+                            className="absolute top-1 right-2 text-white text-2xl"
                             onClick={closeLightbox}
                         >
                             &times;
@@ -92,9 +92,9 @@ const Gallery = () => {
                 </div>
             )}
 
-            <section className="bg-gray-100 py-10 text-center">
+            <section className="bg-gray-100 py-10 text-center px-5 sm:px-14 lg:px-20">
                 <h2 className="text-2xl font-bold mb-4">Want to Learn More?</h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 text-sm sm:text-base">
                     Connect with us to explore more about our events, community, and more.
                 </p>
                 <button className="px-6 py-2 bg-primary text-white rounded-lg">

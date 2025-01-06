@@ -16,7 +16,7 @@ const Home = () => {
                 description="Discover the beauty and culture of our town." 
             />
             
-            <section className="bg-gray-100 p-8 text-center h-[450px] flex flex-col items-center justify-center">
+            <section className="bg-gray-100 pb-8 px-5 pt-16 text-center min-h-[450px] flex flex-col items-center justify-center">
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-8 w-fit mx-auto line">About Ikoro Ekiti</h2>
                 <p className="text-lg mb-4 font-body max-w-4xl mx-auto">
                     Ikoro Ekiti, a town located in the southwestern region of Nigeria, is part of Ekiti State. With a rich cultural heritage and a long-standing tradition, Ikoro has carved out its place as one of the most important towns in Ekiti. The town is steeped in history, beginning from its founding in the early centuries to its growth as a modern-day community.
@@ -27,7 +27,7 @@ const Home = () => {
                 </Link>
             </section>
 
-            <section className="p-8 bg-white">
+            <section className="pb-8 px-5 pt-16 bg-white">
                 <h2 className="text-3xl font-bold font-heading text-center mb-6 line w-fit mx-auto">Latest News</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
@@ -62,8 +62,8 @@ const Home = () => {
             <DignitariesCarousel />
 
             <section className="bg-primary text-white py-12 px-6 md:px-16 text-center h-[400px] flex flex-col items-center justify-center">
-                <h2 className="text-4xl font-bold mb-6 leading-tight">Get Involved</h2>
-                <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto">
+                <h2 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">Get Involved</h2>
+                <p className="text-sm sm:text-lg md:text-xl mb-6 max-w-3xl mx-auto">
                     Join us in making Ikoro even better. Whether through community service, local events, or supporting our projects, there's always a way to contribute!
                 </p>
                 <Link to="/get-involved" className="bg-white text-primary py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center justify-center">

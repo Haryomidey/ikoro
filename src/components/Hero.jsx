@@ -14,7 +14,7 @@ const Hero = ({ title, description }) => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">
                     {title}
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto">
+                <p className="text-sm sm:text-lg md:text-2xl max-w-4xl mx-auto">
                     {description}
                 </p>
             </div>

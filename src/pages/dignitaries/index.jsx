@@ -73,7 +73,7 @@ const Dignitaries = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <div className='relative z-10 px-5 sm:px-14 lg:px-20'>
                     <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4">Meet Our Esteemed Dignitaries</h1>
-                    <p className="sm:text-lg mb-6">Our dignitaries are leaders, visionaries, and advocates for the people of Ikoro Ekiti.</p>
+                    <p className="text-sm sm:text-lg mb-6">Our dignitaries are leaders, visionaries, and advocates for the people of Ikoro Ekiti.</p>
                 </div>
             </div>
 
@@ -103,29 +103,31 @@ const Dignitaries = () => {
             </section>
 
             {selectedDignitary && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg max-w-[600px] w-full p-8 mt-10">
-                        <div className="flex justify-between items-center">
-                            <h2 className="text-2xl font-bold">{selectedDignitary.name}</h2>
-                            <button onClick={closeModal} className="text-gray-600 text-3xl">
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-5">
+                    <div className="bg-white rounded-lg max-w-[600px] w-full mt-10">
+                        <div className="flex justify-between items-center p-5">
+                            <h2 className="text-xl sm:text-2xl font-bold">{selectedDignitary.name}</h2>
+                            <button onClick={closeModal} className="text-gray-600 text-xl sm:text-3xl">
                                 <AiOutlineClose />
                             </button>
                         </div>
-                        <div className="flex justify-center mt-4">
-                            <img
-                                src={selectedDignitary.img || 'https://via.placeholder.com/150'}
-                                alt={selectedDignitary.name}
-                                className="w-32 h-32 object-cover rounded-full border-2 border-gray-300"
-                            />
+                        <div className='p-8'>
+                            <div className="flex justify-center mt-4">
+                                <img
+                                    src={selectedDignitary.img || 'https://via.placeholder.com/150'}
+                                    alt={selectedDignitary.name}
+                                    className="w-32 h-32 object-cover rounded-full border-2 border-gray-300"
+                                />
+                            </div>
+                            <p className="text-sm sm:text-lg mt-4">{selectedDignitary.bio}</p>
+                            <p className="mt-6 italic text-gray-500 text-xs sm:text-sm">“{selectedDignitary.quote}”</p>
                         </div>
-                        <p className="text-lg mt-4">{selectedDignitary.bio}</p>
-                        <p className="mt-6 italic text-gray-500">“{selectedDignitary.quote}”</p>
                     </div>
                 </div>
             )}
 
             <section className="bg-[#d6d6d6ce] py-16 text-center px-5 sm:px-14 lg:px-20">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-gray-800">What the Community Says</h2>
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold mb-6 text-gray-800">What the Community Says</h2>
                 <div className="flex flex-wrap justify-center gap-8">
                     <div className="w-full sm:w-80 md:w-64 bg-white p-6 rounded-lg shadow-lg">
                         <p className="text-lg sm:text-xl italic">"Our leaders inspire us every day to build a better future!"</p>

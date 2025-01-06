@@ -28,8 +28,8 @@ function Footer() {
                 </div>
                 <div className="border-t border-gray-700 pt-6">
                     <div className="flex flex-col sm:flex-row items-center justify-between">
-                        <p className="text-sm text-center sm:text-left">© {new Date().getFullYear()} Ikoro Ekiti. All rights reserved.</p>
-                        <div className="mt-4 sm:mt-0 flex space-x-6 text-sm">
+                        <p className="text-xs sm:text-sm text-center sm:text-left">© {new Date().getFullYear()} Ikoro Ekiti. All rights reserved.</p>
+                        <div className="mt-4 sm:mt-0 flex space-x-6 text-xs sm:text-sm text-center">
                             <Link to="/privacy-policy" className="hover:text-primary-hover">Privacy Policy</Link>
                             <Link to="/terms-of-service" className="hover:text-primary-hover">Terms of Service</Link>
                             <Link to="/contact" className="hover:text-primary-hover">Contact Us</Link>
